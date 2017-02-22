@@ -30,7 +30,7 @@ GStore.prototype.save = function(image) {
     if (!options) return Promise.reject('google cloud storage is not configured');
 
     var targetDir = _self.getTargetDir(),
-    googleStoragePath = 'https://' + options.bucket + '.storage.googleapis.com/',
+    googleStoragePath = 'https://' + options.bucket, // + '.storage.googleapis.com/',
     targetFilename;
 
     return this.getUniqueFileName(this, image, targetDir).then(function (filename) {

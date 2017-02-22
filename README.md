@@ -25,15 +25,10 @@ Add `storage` block to file `config.js` in each environment as below:
         'gcloud': {
             projectId: 'Your_project_id',
             key: 'Your_key_path', // if is in the ghost root folder just add the name of the file
-            bucket: 'Your_bucket_name',
+            bucket: 'Your_bucket_name', //include domain eg. `bucket_name.storage.googleapis.com/`
         }
     },
 
-Future updates -->
-Add possibility to change asset domain. Right now it uses the default  `bucket_name.storage.googleapis.com/
-
-
-## Contrinutors
+## Contributors
 thombuchi
-
 prenaudin
